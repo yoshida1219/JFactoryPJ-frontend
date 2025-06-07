@@ -1,0 +1,947 @@
+@charset "UTF-8";
+
+/*対戦実績の全体サイズ定義*/
+.party-check-contents {
+	display: flex;
+	width: 1660px;
+	height: 610px;
+	/*	padding: 20px;*/
+	border: none;
+	/*	background-color: #666666;*/
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+/*ユーザ情報（左枠部分）の全体サイズ定義*/
+.user-info-contents {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 600px;
+	border: none;
+	/*	background-color: #88bb77;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+/*ユーザイメージ表示*/
+.user-img-contents {
+	display: flex;
+	width: 450px;
+	height: 250px;
+	border: none;
+	margin-top: 20px;
+/*	overflow: hidden;*/
+	/*	background-color: #ffffff;*/
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*写真表示記載*/
+.user-img-disp {
+	display: flex;
+	width: 250px;
+	height: 250px;
+	border: none;
+	margin: 10px;
+	background-color: #ffffff;
+	border: 2px solid #777;
+	border-radius: 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*実績記載*/
+.user-batch-history {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	height: 250px;
+	border: none;
+	margin: 5px;
+	background-color: #ffddaa;
+	align-items: center;
+	text-align: center;
+}
+
+/* 実績記載 */
+.user-batch-history .c-title {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+	height: 40px;
+	border: none;
+	background-color: #ddaa33;
+	border: 2px solid #777;
+	border-radius: 5px 5px 0px 0px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* 実績記載(バッチリスト) */
+.user-batch-history .c-detail {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 0px;
+	flex-direction: column;
+	width: 150px;
+	height: 210px;
+	border: none;
+	background: linear-gradient(to bottom right, #333333, #333355);
+	border: 2px solid #777;
+	border-radius: 0px 0px 5px 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*バッチ単体*/
+.batch-obj {
+	display: flex;
+	aspect-ratio: 1/1;
+	background: linear-gradient(to bottom right, #dddd99, #ffffdd);
+	height: 10px;
+	margin: 0 auto;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+/*ユーザ情報詳細記載*/
+.user-name-contents {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 80px;
+	border: none;
+	margin-top: 20px;
+	/*	background-color: #ddaaaa;*/
+	justify-content: center;
+	text-align: center;
+}
+
+/*アカウント登録日時*/
+.user-begin-rec {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 40px;
+	border: none;
+	margin-top: 0px;
+	background-color: #edea90;
+	border: 2px solid #777;
+	border-radius: 5px 5px 0px 0px;
+	justify-content: center;
+	text-align: center;
+}
+
+/*ユーザ名称（論理データ）*/
+.user-name-title {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 40px;
+	border: none;
+	margin-top: 0px;
+	background-color: #ffffff;
+	border: 2px solid #777;
+	justify-content: center;
+	text-align: center;
+}
+
+/*ユーザ履歴詳細記載*/
+.user-history-contents {
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+	height: 190px;
+	border: none;
+	/*	background-color: #edea90;*/
+	/*	border: 2px solid #777;*/
+	text-align: center;
+}
+
+/*大会選択プルダウン記載箇所*/
+.match-history-list {
+	display: flex;
+	width: 450px;
+	height: 70px;
+	border: none;
+	background-color: #edea90;
+	border: 2px solid #777;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.match-obj-record {
+	display: flex;
+	width: 450px;
+	height: 70px;
+	border: none;
+	background-color: #ffffff;
+	border: 2px solid #777;
+	border-radius: 0px 0px 5px 5px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/*ポケモン情報（右枠部分）の全体サイズ定義*/
+.pkmn-info-contents {
+	display: flex;
+	width: 100%;
+	height: 600px;
+	border: none;
+	/*	background-color: #aa77bb;*/
+	justify-content: center;
+	text-align: center;
+}
+
+/*大会名称記載部分*/
+.pick-match-contents {
+	display: flex;
+	flex-direction: column;
+	width: 1000px;
+	height: 550px;
+	margin-top: 20px;
+	border: none;
+	/*	background-color: #77ddcc;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+/*対戦実績記載部分*/
+.match-contents {
+	height: 100vh;
+	/* ビューポート全体の高さを占める */
+	background-image: url('../img/match_head_nospare.png');
+	/* 背景画像を設定 */
+	background-repeat: no-repeat;
+	/* リピートしない */
+	background-size: cover;
+	/* コンテナ全体を覆うように画像を拡大・縮小 */
+	background-position: center;
+	/* 画像を中央に配置 */
+	display: flex;
+	width: 950px;
+	height: 80px;
+	border: none;
+	margin: 5px auto;
+	/*	background-color: #6677dd;*/
+	/*	border: 2px solid #777;*/
+	border-radius: 5px;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	pointer-events: none;
+}
+
+/*コンテンツ（小見出し）部分の定義*/
+.content-title {
+	display: flex;
+	width: 300px;
+	height: 35px;
+	border: none;
+	background-color: #444444;
+	color: #ffffff;
+	font-weight: bold;
+	border: 2px solid #777;
+	border-radius: 5px;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+.match-contents-details {
+	display: flex;
+	width: 950px;
+	height: 430px;
+	border: none;
+	margin: 5px auto;
+	/*	background-color: #dd6600;*/
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+/*自身で選択したポケモン情報記載部分*/
+.my-pkmn-contents {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: 425px;
+	border: none;
+	margin: 5px auto;
+	/*	background-color: #dd6600;*/
+	/* 垂直方向の中央揃え */
+	text-align: center;
+}
+
+/*本大会で対戦した他ユーザの情報*/
+.other-pkmn-contents {
+	display: flex;
+	flex-direction: column;
+	width: 310px;
+	height: 327px;
+	border: none;
+	margin: 5px auto;
+	/*	background-color: #20dd44;*/
+	z-index: 3;
+	overflow: hidden;
+}
+
+.list-obj-list {
+	display: flex;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	height: 288px;
+}
+
+/*選択したポケモンリストの枠*/
+.content-pkmn-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 0px;
+	height: 292px;
+	width: 580px;
+	margin: 0 10px;
+	padding: 10px 0;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	/*	background-color: #aa77bb;*/
+}
+
+/*一つ一つのポケモン枠情報定義*/
+.pkmn-obj {
+	display: flex;
+	aspect-ratio: 1.4/1;
+	background-color: #ffffff;
+	border: 2px solid #777;
+	border-radius: 5px;
+	height: 120px;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*選択したユーザリストの枠*/
+.other-user-content {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 0px;
+	height: 95%;
+	width: 90%;
+	margin: 0 10px;
+	padding: 0;
+	overflow-y: scroll;
+}
+
+/*一つ一つのユーザ枠情報定義*/
+.user-obj {
+	position: relative;
+	display: flex;
+	background-color: #ffffff;
+	height: 70px;
+	width: 100%;
+	justify-content: flex-start;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.user-footer-obj {
+	display: flex;
+	position: absolute;
+	top: 85px;
+	width: 100%;
+	height: 120px;
+	padding-top: 5px;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #ffffff;
+	font-weight: bold;
+	justify-content: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	transition: transform 0.8s ease;
+}
+
+.match-result {
+	display: flex;
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	justify-content: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	transition: transform 0.8s ease;
+
+}
+
+.user-footer-obj:hover {
+	transform: translateY(-85px);
+}
+
+/*ポケモン交換枠の記載枠*/
+.change-pkmn-contents {
+	display: flex;
+	width: 600px;
+	height: 70px;
+	border: none;
+	/*	background-color: #ffffbb;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+
+.phone-check-label {
+	z-index: 0;
+	display: none;
+}
+
+
+/*対戦履歴のユーザ画像*/
+.user-obj-list-detail-img {
+	display: flex;
+	width: 80px;
+	height: 80px;
+	border: none;
+	/*	background-color: #ffffbb;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+}
+
+/*対戦履歴のユーザ説明*/
+.user-obj-list-detail-title {
+	display: flex;
+	border: none;
+	/*	background-color: #ffffbb;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.display-noimg {
+	margin: 0 auto;
+}
+
+
+/* スマホ用のレイアウト（画面幅が1200px以下の場合） */
+@media (max-width: 1200px) {
+
+
+	/*スマホ画面専用の部分*/
+	.phone-check-label {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		width: 100%;
+		height: 80px;
+		border: none;
+		/*		background-color: #88bb77;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		z-index: 2;
+	}
+
+	/*対戦実績の全体サイズ定義*/
+	.party-check-contents {
+		display: flex;
+		width: 100%;
+		height: 610px;
+		/*	padding: 20px;*/
+		border: none;
+		/*	background-color: #666666;*/
+		justify-content: center;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 0px;
+	}
+
+	/*ユーザ情報（左枠部分）の全体サイズ定義(条件表示)*/
+	.user-info-contents {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 600px;
+		border: none;
+		/*	background-color: #88bb77;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		transform: translateY(-50px);
+		z-index: 1;
+	}
+
+	/*ユーザイメージ表示*/
+	.user-img-contents {
+		display: flex;
+		width: 100%;
+		height: 195px;
+		border: none;
+		margin-top: 20px;
+/*		overflow-x: hidden;*/
+		/*	background-color: #ffffff;*/
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		pointer-events: none;
+	}
+
+	/*写真表示記載*/
+	.user-img-disp {
+		display: flex;
+		width: 200px;
+		height: 200px;
+		border: none;
+		margin: 10px;
+		background-color: #ffffff;
+		border: 2px solid #777;
+		border-radius: 5px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*実績記載*/
+	.user-batch-history {
+		display: flex;
+		flex-direction: column;
+		width: 120px;
+		height: 200px;
+		border: none;
+		margin: 5px;
+		background-color: #ffddaa;
+		align-items: center;
+		text-align: center;
+	}
+
+	/* 実績記載 */
+	.user-batch-history .c-title {
+		display: flex;
+		flex-direction: column;
+		width: 120px;
+		height: 40px;
+		border: none;
+		background-color: #ddaa33;
+		border: 1px solid #777;
+		border-radius: 5px 5px 0px 0px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/* 実績記載(バッチリスト) */
+	.user-batch-history .c-detail {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 0px;
+		flex-direction: column;
+		width: 120px;
+		height: 155px;
+		border: none;
+		background: linear-gradient(to bottom right, #333333, #333355);
+		border: 2px solid #777;
+		border-radius: 0px 0px 5px 5px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*バッチ単体*/
+	.batch-obj {
+		display: flex;
+		aspect-ratio: 1/1;
+		background: linear-gradient(to bottom right, #dddd99, #ffffdd);
+		height: 5px;
+		margin: 0 auto;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*ユーザ情報詳細記載*/
+	.user-name-contents {
+		display: flex;
+		flex-direction: column;
+		width: 360px;
+		height: 80px;
+		border: none;
+		margin-top: 20px;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*アカウント登録日時*/
+	.user-begin-rec {
+		display: flex;
+		flex-direction: column;
+		width: 360px;
+		height: 40px;
+		border: none;
+		margin-top: 0px;
+		background-color: #edea90;
+		border: 2px solid #777;
+		border-radius: 5px 5px 0px 0px;
+		justify-content: center;
+		text-align: center;
+	}
+
+	/*ユーザ名称（論理データ）*/
+	.user-name-title {
+		display: flex;
+		flex-direction: column;
+		width: 360px;
+		height: 40px;
+		border: none;
+		margin-top: 0px;
+		background-color: #ffffff;
+		border: 2px solid #777;
+		justify-content: center;
+		text-align: center;
+	}
+
+	/*ユーザ履歴詳細記載*/
+	.user-history-contents {
+		display: flex;
+		flex-direction: column;
+		width: 360px;
+		height: 190px;
+		border: none;
+		/*	background-color: #edea90;*/
+		/*	border: 2px solid #777;*/
+		/*		justify-content: center;*/
+		align-items: center;
+		text-align: center;
+	}
+
+	/*大会選択プルダウン記載箇所*/
+	.match-history-list {
+		display: flex;
+		width: 360px;
+		height: 70px;
+		border: none;
+		background-color: #edea90;
+		border: 2px solid #777;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*大会選択プルダウン記載箇所*/
+	.result-disp-list {
+		display: flex;
+		width: 360px;
+		height: 70px;
+		border: none;
+		/*		background-color: #edea90;*/
+		/*		border: 2px solid #777;*/
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.match-obj-record {
+		display: flex;
+		width: 360px;
+		height: 70px;
+		border: none;
+		background-color: #ffffff;
+		border: 2px solid #777;
+		border-radius: 0px 0px 5px 5px;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	/*ポケモン情報（右枠部分）の全体サイズ定義(条件表示2-3)*/
+	.pkmn-info-contents {
+		display: none;
+		width: 1100px;
+		height: 600px;
+		border: none;
+		/*	background-color: #aa77bb;*/
+		justify-content: center;
+		text-align: center;
+	}
+
+	/*大会名称記載部分*/
+	.pick-match-contents {
+		display: flex;
+		flex-direction: column;
+		height: 550px;
+		margin-top: 20px;
+		border: none;
+		/*	background-color: #77ddcc;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*対戦実績記載部分*/
+	.match-contents {
+		height: 100vh;
+		/* ビューポート全体の高さを占める */
+		background-image: url('../img/middle_nospare.png');
+		/* 背景画像を設定 */
+		background-repeat: no-repeat;
+		/* リピートしない */
+		background-size: 341px;
+		/* コンテナ全体を覆うように画像を拡大・縮小 */
+		background-position: center;
+		/* 画像を中央に配置 */
+		display: flex;
+		width: 90%;
+		height: 80px;
+		border: none;
+		margin: 5px auto;
+		/*	background-color: #6677dd;*/
+		/*	border: 2px solid #777;*/
+		border-radius: 5px;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*コンテンツ（小見出し）部分の定義*/
+	.content-title {
+		display: flex;
+		width: 300px;
+		height: 35px;
+		border: none;
+		background-color: #444444;
+		color: #ffffff;
+		font-weight: bold;
+		border: 2px solid #777;
+		border-radius: 5px;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	.match-contents-details {
+		display: flex;
+		width: 90%;
+		height: 430px;
+		border: none;
+		margin: 40px auto;
+		/*	background-color: #dd6600;*/
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*自身で選択したポケモン情報記載部分(条件表示)*/
+	.my-pkmn-contents {
+		display: none;
+		flex-direction: column;
+		width: 600px;
+		height: 425px;
+		border: none;
+		margin: 5px auto;
+		/*	background-color: #dd6600;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*本大会で対戦した他ユーザの情報(条件表示)*/
+	.other-pkmn-contents {
+		display: none;
+		flex-direction: column;
+		width: 310px;
+		height: 327px;
+		border: none;
+		margin: 5px auto;
+		/*	background-color: #20dd44;*/
+		z-index: 3;
+		overflow: hidden;
+	}
+
+	.list-obj-list {
+		display: flex;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+	}
+
+	/*選択したポケモンリストの枠*/
+	.content-pkmn-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		gap: 10px;
+		height: 400px;
+		width: 57%;
+		margin: 0 10px;
+		padding: 10px 0;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		/*	background-color: #aa77bb;*/
+	}
+
+	/*一つ一つのポケモン枠情報定義*/
+	.pkmn-obj {
+		display: flex;
+		aspect-ratio: 1.4/1;
+		background-color: #ffffff;
+		border: 2px solid #777;
+		border-radius: 5px;
+		height: 120px;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/*選択したユーザリストの枠*/
+	.other-user-content {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	gap: 0px;
+	height: 95%;
+	width: 90%;
+	margin: 0 10px;
+	padding: 0;
+	overflow-y: scroll;
+	}
+
+	/*一つ一つのユーザ枠情報定義*/
+	.user-obj {
+		position: relative;
+		display: flex;
+		background-color: #ffffff;
+		height: 70px;
+		justify-content: flex-start;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		z-index: 1;
+		overflow: hidden;
+	}
+
+	.user-footer-obj {
+		display: flex;
+		position: absolute;
+		top: 85px;
+		width: 100%;
+		height: 120px;
+		padding-top: 5px;
+		background-color: rgba(0, 0, 0, 0.7);
+		color: #ffffff;
+		font-weight: bold;
+		justify-content: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		transition: transform 0.8s ease;
+	}
+
+	.match-result {
+		display: flex;
+		position: absolute;
+		top: 60px;
+		width: 100%;
+		height: 30px;
+		padding-top: 5px;
+		color: #ffffff;
+		font-weight: bold;
+		justify-content: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		transition: transform 0.8s ease;
+
+	}
+
+	.user-footer-obj:hover {
+		transform: translateY(-85px);
+	}
+
+	/*ポケモン交換枠の記載枠*/
+	.change-pkmn-contents {
+		display: flex;
+		width: 600px;
+		height: 70px;
+		border: none;
+		/*	background-color: #ffffbb;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 20px auto;
+		margin-bottom: 5px;
+	}
+}

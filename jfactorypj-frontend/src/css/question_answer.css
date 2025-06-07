@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+.section-1 {
+	width: 1500px;
+	height: 600px;
+	padding: 50px;
+	border: none;
+	/*	background-color: #666666;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	transform: translateX(0%);
+}
+
+
+.section-1-left {
+	width: 350px;
+	height: 620px;
+	padding: 0;
+	margin: 0 20px;
+	border: none;
+	/*	background-color: #66ff66;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transform: translateY(-20px);
+}
+
+.explain-head {
+	height: 100vh;
+	/* ビューポート全体の高さを占める */
+	background-image: url('../img/middle_nospare.png');
+	/* 背景画像を設定 */
+	background-repeat: no-repeat;
+	/* リピートしない */
+	background-size: cover;
+	/* コンテナ全体を覆うように画像を拡大・縮小 */
+	background-position: center;
+	/* 画像を中央に配置 */
+	width: 350px;
+	height: 70px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	/*	background-color: #967f88;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transform: translateX(0%);
+}
+
+.explain-detail {
+	width: 350px;
+	height: 550px;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	border: none;
+	/*	background-color: #5958F2;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	transform: translateX(0%);
+}
+
+
+.section-1-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0;
+	margin: 0 20px;
+	/*	border: 2px solid #777;*/
+	/*	background-color: #ffffff;*/
+	transform: translateX(0%);
+	width: 1100px;
+	height: 620px;
+}
+
+.img-flame-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #777;
+	background-color: #ffffff;
+	transform: translateX(0%);
+	width: 900px;
+	height: 500px;
+}
+
+
+.img-page-section {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	border: none;
+	/*	background-color: #ddcc89;*/
+	transform: translateX(0%);
+	width: 900px;
+	height: 100px;
+}
+
+
+.img-page-obj {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 5px;
+	margin: 25px;
+	border: 2px solid #777;
+	border-radius: 5px;
+	background-color: #4a90e2;
+	color: white;
+	font-weight: bold;
+	transform: translateX(0%);
+	width: 40px;
+	height: 40px;
+}
+
+
+/* テーブルコンテナのスタイル設定 */
+.table-container {
+	width: 90%;
+	margin: 0 auto;
+	height: 500px;
+	background-color: white;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	position: relative;
+	overflow-y: auto;
+}
+
+/* テーブルのスタイル設定 */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 1em;
+	margin-top: 0;
+}
+
+/*テーブルヘッダーのスタイル設定*/
+thead {
+	background-color: #4a90e2;
+	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+th,
+td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	word-wrap: break-word;
+	text-align: center;
+	margin: 0;
+}
+
+th {
+	background-color: #4a90e2;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+th:hover {
+	background-color: #357ABD;
+}
+
+tbody tr:hover {
+	background-color: #e9e9e9;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+/* 列の幅設定 */
+th.code,
+td.code {
+	width: 80px;
+}
+
+th.name,
+td.name {
+	width: 150px;
+}
+
+th.type1,
+td.type1,
+th.type2,
+td.type2 {
+	width: 100px;
+}
+
+th.image,
+td.image {
+	width: 100px;
+}
+
+th.hp,
+td.hp,
+th.attack,
+td.attack,
+th.defense,
+td.defense,
+th.special-attack,
+td.special-attack,
+th.special-defense,
+td.special-defense,
+th.speed,
+td.speed {
+	width: 70px;
+}
+
+.image img {
+	max-width: 80px;
+	height: auto;
+}
+
+
+.phone-select-obj {
+	display: none;
+}
+
+/* スマホ用のレイアウト（画面幅が1200px以下の場合） */
+@media (max-width: 1200px) {
+	.section-1 {
+		width: 100%;
+		height: 500px;
+		padding: 0px;
+		border: none;
+		/*	background-color: #666666;*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin: 0 auto;
+		transform: translateX(0%);
+		margin-bottom: 170px;
+	}
+
+
+	.section-1-left {
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+
+	.explain-head {
+		height: 50vh;
+		/* ビューポート全体の高さを占める */
+		background-image: url('../img/middle_nospare.png');
+		/* 背景画像を設定 */
+		background-repeat: no-repeat;
+		/* リピートしない */
+		background-size: cover;
+		/* コンテナ全体を覆うように画像を拡大・縮小 */
+		background-position: center;
+		/* 画像を中央に配置 */
+		width: 350px;
+		height: 70px;
+		padding: 0;
+		margin: 0;
+		border: none;
+		/*	background-color: #967f88;*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		transform: translateX(0%);
+	}
+
+	.explain-detail {
+		display: none;
+		width: 0px;
+		height: 0px;
+	}
+
+
+	.section-1-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0;
+		margin: 0 20px;
+		/*	border: 2px solid #777;*/
+		/*	background-color: #ffffff;*/
+		transform: translateX(0%);
+		width: 90%;
+		height: 620px;
+	}
+
+	.img-flame-section {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		border: 2px solid #777;
+		background-color: #ffffff;
+		transform: translateX(0%);
+		width: 100%;
+		height: 200px;
+	}
+
+
+	.img-page-section {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+		border: none;
+		/*	background-color: #ddcc89;*/
+		transform: translateX(0%);
+		width: 900px;
+		height: 100px;
+	}
+
+
+	.img-page-obj {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		padding: 5px;
+		margin: 10px;
+		border: 2px solid #777;
+		border-radius: 5px;
+		background-color: #4a90e2;
+		color: white;
+		font-weight: bold;
+		transform: translateX(0%);
+		width: 20px;
+		height: 20px;
+	}
+
+	.explain_img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.phone-select-obj {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+		padding: 5px;
+		margin: 25px;
+/*		border: 2px solid #777;*/
+		border-radius: 5px;
+/*		background-color: #4a90e2;*/
+		color: white;
+		font-weight: bold;
+		transform: translateX(0%);
+		width: 300px;
+		height: 110px;
+	}
+	
+	.select-parts {
+		display: flex;
+		width: 300px;
+		height: 100px;
+		justify-content: center;
+		text-align: center;
+		align-items: center;
+	}
+
+
+	/*	 テーブルコンテナのスタイル設定 */
+	/*	.table-container {*/
+	/*		display: none;*/
+	/*		width: 0px;*/
+	/*		height: 0px;*/
+	/*	}*/
+
+	/*	 テーブルのスタイル設定 */
+	/*	table {*/
+	/*		display: none;*/
+	/*		width: 0px;*/
+	/*		height: 0px;*/
+	/*	}*/
+
+	/*	テーブルヘッダーのスタイル設定*/
+	/*	thead {*/
+	/*		display: none;*/
+	/*		width: 0px;*/
+	/*		height: 0px;*/
+	/*	}*/
+
+	/*	th,*/
+	/*	td {*/
+	/*		display: none;*/
+	/*		width: 0px;*/
+	/*		height: 0px;*/
+	/*	}*/
+
+	/*	th {*/
+	/*		display: none;*/
+	/*		width: 0px;*/
+	/*		height: 0px;*/
+	/*	}*/
+
+	/*	img {*/
+	/*		display: block;*/
+	/*		margin: 0 auto;*/
+	/*		border-radius: 10px;*/
+	/*	}*/
+
+	/*	 列の幅設定 */
+	/*	th.code,*/
+	/*	td.code {*/
+	/*		width: 80px;*/
+	/*	}*/
+
+	/*	th.name,*/
+	/*	td.name {*/
+	/*		width: 150px;*/
+	/*	}*/
+
+	/*	th.type1,*/
+	/*	td.type1,*/
+	/*	th.type2,*/
+	/*	td.type2 {*/
+	/*		width: 100px;*/
+	/*	}*/
+
+	/*	th.image,*/
+	/*	td.image {*/
+	/*		width: 100px;*/
+	/*	}*/
+
+	/*	th.hp,*/
+	/*	td.hp,*/
+	/*	th.attack,*/
+	/*	td.attack,*/
+	/*	th.defense,*/
+	/*	td.defense,*/
+	/*	th.special-attack,*/
+	/*	td.special-attack,*/
+	/*	th.special-defense,*/
+	/*	td.special-defense,*/
+	/*	th.speed,*/
+	/*	td.speed {*/
+	/*		width: 70px;*/
+	/*	}*/
+
+	/*	.image img {*/
+	/*		max-width: 80px;*/
+	/*		height: auto;*/
+	/*	}*/
+
+}

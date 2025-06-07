@@ -1,0 +1,1167 @@
+@charset "UTF-8";
+
+/*全体サイズ定義*/
+.section-1 {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: 730px;
+	border: none;
+	/*	background-color: #88bb77;*/
+	justify-content: flex-start;
+	/* 水平方向の上揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/* ページ上部の定義（ボディ部分のヘッダー） */
+.body-header-range {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 100%;
+	height: 100px;
+	border: none;
+	/*	background-color: #a29922;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* ボタンの基本デザイン */
+.button-basic-design {
+	display: flex;
+	background: linear-gradient(to bottom, #4da6ff, #357ae8);
+	color: white;
+	border: 2px solid #357ae8;
+	border-radius: 20px;
+	height: 30px;
+	width: 30px;
+	padding: 10px;
+	font-size: 35px;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease;
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* ページ上部の定義（ボディ部分のヘッダー） */
+.previous-page-button {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 80px;
+	height: 80px;
+	border: none;
+	/*	background-color: #a29922;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	transform: translateX(30px);
+}
+
+/* ページ上部の定義（ボディ部分のヘッダー） */
+.next-page-button {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 80px;
+	height: 80px;
+	border: none;
+	/*	background-color: #a29922;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	transform: translateX(-30px);
+}
+
+/* ページ上部の定義（ボディ部分のヘッダー） */
+.match-title-label {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 90%;
+	height: 80px;
+	border: none;
+	background-color: #ffffff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/*	background-color: #a29922;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+.body-header-secton-1 {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 50%;
+	height: 70px;
+	border: none;
+	/*	background-color: #ff22a1;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+.body-contents-range {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 100%;
+	height: 630px;
+	border: none;
+	/*	background-color: #cc65dd;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+.body-contents-left-range {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	height: 630px;
+	border: none;
+	/*	background-color: #88cc;*/
+	justify-content: flex-start;
+	/* 水平方向の上揃え */
+	align-items: flex-start;
+	/* 垂直方向の上揃え */
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 0;
+}
+
+.body-contents-left-header {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 90%;
+	height: 80px;
+	border: none;
+	/*	background-color: #22aada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 0;
+}
+
+.body-contents-left-detail {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 475px;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 0;
+}
+
+
+.asign-top-user {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 90%;
+	height: 125px;
+	border: none;
+	/*	background-color: #aa45cc;*/
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 10px auto;
+	padding: 0;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.asign-top-user:hover {
+	/* 輝度を調整して薄暗くする */
+	filter: brightness(0.92);
+	transform: scale(0.98);
+}
+
+.top-user-left {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	height: 95%;
+	border: none;
+	/*	background-color: #aa45cc;*/
+	/*	background-color: #ffffff;*/
+	justify-content: flex-start;
+	/* 水平方向の中央揃え */
+	align-items: flex-start;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+.top-user-left-head {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 30%;
+	border: none;
+	/*	background-color: #4445dd;*/
+	/*	background-color: #ffffff;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.rank-label {
+	font-family: "Arial Black", sans-serif;
+	/* 太めのフォント */
+	font-size: 24px;
+	/* 文字を大きく */
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 1位のスタイル（金色に光るエフェクト） */
+.rank-1st {
+	background: linear-gradient(to bottom, #ffbb00, #dd9900);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8);
+}
+
+/* 2位（シルバー） */
+.rank-2nd {
+	background: linear-gradient(to bottom, #c9c9c9, #565656);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 2px 5px rgba(192, 192, 192, 0.8);
+}
+
+/* 3位（ブロンズ） */
+.rank-3rd {
+	background: linear-gradient(to bottom, #cd7f32, #b87333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 2px 2px 5px rgba(205, 127, 50, 0.8);
+}
+
+
+.top-user-left-detail {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 70%;
+	border: none;
+	/*	background-color: #ffcadd;*/
+	/*	background-color: #ffffff;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+.top-user-right {
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	height: 90%;
+	border: none;
+	/*	background-color: #ffcc33;*/
+	/*	background-color: #ffffff;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.top-user-right-head {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 80%;
+	border: none;
+	/*	background-color: #ffcc33;*/
+	/*	background-color: #ffffff;*/
+	justify-content: flex-end;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+.top-user-right-detail {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 20%;
+	border: none;
+	background-color: #4a90e2;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/*	background-color: #ffffff;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.body-contents-right-range {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	height: 630px;
+	border: none;
+	/*	background-color: #5dd;*/
+	justify-content: flex-start;
+	/* 水平方向の上揃え */
+	align-items: flex-start;
+	/* 垂直方向の上揃え */
+	text-align: center;
+	margin: 0 auto;
+}
+
+.body-contents-right-header {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 90%;
+	height: 80px;
+	border: none;
+	/*	background-color: #22aada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 0;
+}
+
+.body-contents-right-detail {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 90%;
+	height: 475px;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding-top: 0;
+}
+
+/* テーブルコンテンツ */
+.table-contents {
+	/*	display: flex;*/
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	height: 475px;
+	/*	background-color: #20a344;*/
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+
+/* テーブルのスタイル設定 */
+.table-class {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+	font-size: 1em;
+	margin-top: 0;
+}
+
+.table-head-class {
+	background-color: #4a90e2;
+	color: white;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+
+.table-detail-class {
+	background-color: #ffffff;
+	color: black;
+	position: sticky;
+	top: 0;
+}
+
+.table-detail {
+	padding: 35px 12px;
+	height: 55px;
+	text-align: left;
+	/*	border-bottom: 1px solid #ddd;*/
+	word-wrap: break-word;
+	text-align: center;
+	margin: 0;
+}
+
+.tr-class {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-bottom: 1px solid #ddd;
+}
+
+.tr-class:hover {
+	/* 輝度を調整して薄暗くする */
+	background-color: #e9e9e9;
+}
+
+.coulum-apply-number {
+	width: 85px;
+}
+
+.coulum-user-info {
+	width: 250px;
+}
+
+
+.td-img {
+	display: flex;
+	position: relative;
+	/*	flex-direction: column;*/
+	width: 100%;
+	height: 55px;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 0;
+}
+
+/*.td-img::after {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    bottom: -5px;*/
+/*    left: 50%;*/
+/*    width: 50px;*/
+/*    height: 10px;*/
+/*    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));*/
+/*    transform: translateX(-50%);*/
+/*    z-index: -1;*/
+/*}*/
+
+.td-user {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 100%;
+	height: 55px;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.td-user-left {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 30%;
+	height: 55px;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.td-user-right {
+	display: flex;
+	/*	flex-direction: column;*/
+	width: 70%;
+	border: none;
+	/*	background-color: #ddaada;*/
+	justify-content: center;
+	/* 水平方向の中央揃え */
+	align-items: center;
+	/* 垂直方向の中央揃え */
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* スマホ用のレイアウト（画面幅が1200px以下の場合） */
+@media (max-width: 1200px) {
+
+	/*全体サイズ定義*/
+	.section-1 {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 650px;
+		border: none;
+		/*	background-color: #88bb77;*/
+		justify-content: flex-start;
+		/* 水平方向の上揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+
+	/* ページ上部の定義（ボディ部分のヘッダー） */
+	.body-header-range {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 100%;
+		height: 80px;
+		border: none;
+		/*	background-color: #a29922;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/* ボタンの基本デザイン */
+	.button-basic-design {
+		display: flex;
+		background: linear-gradient(to bottom, #4da6ff, #357ae8);
+		color: white;
+		border: 2px solid #357ae8;
+		border-radius: 20px;
+		height: 7px;
+		width: 7px;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease;
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	/* ページ上部の定義（ボディ部分のヘッダー） */
+	.previous-page-button {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 80px;
+		height: 80px;
+		border: none;
+		/*	background-color: #a29922;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		transform: translateX(10px);
+	}
+
+	/* ページ上部の定義（ボディ部分のヘッダー） */
+	.next-page-button {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 80px;
+		height: 80px;
+		border: none;
+		/*	background-color: #a29922;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		transform: translateX(-10px);
+	}
+
+	/* ページ上部の定義（ボディ部分のヘッダー） */
+	.match-title-label {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 90%;
+		height: 50px;
+		border: none;
+		background-color: #ffffff;
+		border-radius: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		/*	background-color: #a29922;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.body-header-secton-1 {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 100%;
+		height: 70px;
+		border: none;
+		/*	background-color: #ff22a1;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.body-contents-range {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 100%;
+		height: 400px;
+		border: none;
+		/*	background-color: #cc65dd;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.body-contents-left-range {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		height: 400px;
+		border: none;
+		/*	background-color: #88cc;*/
+		justify-content: flex-start;
+		/* 水平方向の上揃え */
+		align-items: flex-start;
+		/* 垂直方向の上揃え */
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 0;
+	}
+
+	.body-contents-left-header {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 90%;
+		height: 80px;
+		border: none;
+		/*	background-color: #22aada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 15px;
+		padding-top: 0;
+	}
+
+	.body-contents-left-detail {
+		display: flex;
+		flex-direction: column;
+		width: 90%;
+		height: 475px;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 15px;
+		padding-top: 0;
+	}
+
+
+	.asign-top-user {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 90%;
+		height: 125px;
+		border: none;
+		/*	background-color: #aa45cc;*/
+		background-color: #ffffff;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 10px auto;
+		padding: 0;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.asign-top-user:hover {
+		/* 輝度を調整して薄暗くする */
+		filter: brightness(0.92);
+		transform: scale(0.98);
+	}
+
+	.top-user-left {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+		height: 95%;
+		border: none;
+		/*	background-color: #aa45cc;*/
+		/*	background-color: #ffffff;*/
+		justify-content: flex-start;
+		/* 水平方向の中央揃え */
+		align-items: flex-start;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.top-user-left-head {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 30%;
+		border: none;
+		/*	background-color: #4445dd;*/
+		/*	background-color: #ffffff;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.rank-label {
+		font-family: "Arial Black", sans-serif;
+		/* 太めのフォント */
+		font-size: 24px;
+		/* 文字を大きく */
+		font-weight: bold;
+		text-align: center;
+	}
+
+	/* 1位のスタイル（金色に光るエフェクト） */
+	.rank-1st {
+		background: linear-gradient(to bottom, #ffbb00, #dd9900);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: 2px 2px 5px rgba(255, 215, 0, 0.8);
+	}
+
+	/* 2位（シルバー） */
+	.rank-2nd {
+		background: linear-gradient(to bottom, #c9c9c9, #565656);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: 2px 2px 5px rgba(192, 192, 192, 0.8);
+	}
+
+	/* 3位（ブロンズ） */
+	.rank-3rd {
+		background: linear-gradient(to bottom, #cd7f32, #b87333);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-shadow: 2px 2px 5px rgba(205, 127, 50, 0.8);
+	}
+
+
+	.top-user-left-detail {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 70%;
+		border: none;
+		/*	background-color: #ffcadd;*/
+		/*	background-color: #ffffff;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	.top-user-right {
+		display: flex;
+		flex-direction: column;
+		width: 65%;
+		height: 90%;
+		border: none;
+		/*	background-color: #ffcc33;*/
+		/*	background-color: #ffffff;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.top-user-right-head {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 80%;
+		border: none;
+		/*	background-color: #ffcc33;*/
+		/*	background-color: #ffffff;*/
+		justify-content: flex-end;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding-bottom: 5px;
+	}
+
+	.top-user-right-detail {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 20%;
+		border: none;
+		background-color: #4a90e2;
+		border-radius: 5px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		/*	background-color: #ffffff;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		font-size: 1em;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.body-contents-right-range {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		height: 400px;
+		border: none;
+		/*	background-color: #5dd;*/
+		justify-content: flex-start;
+		/* 水平方向の上揃え */
+		align-items: flex-start;
+		/* 垂直方向の上揃え */
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.body-contents-right-header {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 100%;
+		height: 40px;
+		border: none;
+		/*	background-color: #22aada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 15px;
+		padding-top: 0;
+	}
+
+	.body-contents-right-detail {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 95%;
+		height: 400px;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 15px;
+		padding-top: 0;
+	}
+
+	/* テーブルコンテンツ */
+	.table-contents {
+		/*	display: flex;*/
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+		height: 400px;
+		/*	background-color: #20a344;*/
+		border: 1px solid #ddd;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		box-sizing: border-box;
+		overflow-y: auto;
+	}
+
+	/* テーブルのスタイル設定 */
+	.table-class {
+		width: 100%;
+		border-collapse: collapse;
+		table-layout: fixed;
+		font-size: 10px;
+		margin-top: 0;
+	}
+
+	.table-head-class {
+		background-color: #4a90e2;
+		color: white;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+
+
+	.table-detail-class {
+		background-color: #ffffff;
+		color: black;
+		position: sticky;
+		top: 0;
+	}
+
+	.table-detail {
+		padding: 5px 4px;
+		height: 55px;
+		text-align: left;
+		border-bottom: 1px solid #777;
+		word-wrap: break-word;
+		text-align: center;
+		margin: 0;
+	}
+
+	.tr-class {
+		cursor: pointer;
+		transition: all 0.3s ease;
+		border: 1px solid #777;;
+	}
+
+	.tr-class:hover {
+		/* 輝度を調整して薄暗くする */
+		background-color: #e9e9e9;
+	}
+
+	.coulum-apply-number {
+		width: 40px;
+	}
+
+	.coulum-user-info {
+		width: 80px;
+	}
+
+
+	.td-img {
+		display: flex;
+		position: relative;
+		/*	flex-direction: column;*/
+		width: 100%;
+		height: 55px;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 0;
+	}
+
+	/*.td-img::after {*/
+	/*    content: "";*/
+	/*    position: absolute;*/
+	/*    bottom: -5px;*/
+	/*    left: 50%;*/
+	/*    width: 50px;*/
+	/*    height: 10px;*/
+	/*    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));*/
+	/*    transform: translateX(-50%);*/
+	/*    z-index: -1;*/
+	/*}*/
+
+	.td-user {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 55px;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.td-user-left {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 30%;
+		height: 55px;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.td-user-right {
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 70%;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 2px auto;
+		padding: 0;
+	}
+	
+	.phone-disp-no {
+		position: relative;
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 70%;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: flex-start;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		margin: 0 auto;
+		padding-top: 0;
+		transform: translateY(5px);
+	}
+	
+	.phone-badge-disp {
+		position: absolute;
+		display: flex;
+		/*	flex-direction: column;*/
+		width: 70%;
+		border: none;
+		/*	background-color: #ddaada;*/
+		justify-content: center;
+		/* 水平方向の中央揃え */
+		align-items: flex-start;
+		/* 垂直方向の中央揃え */
+		text-align: center;
+		top:16px;
+		margin: 0 auto;
+		padding-top: 0;
+		transform: translateY(5px);
+	}
+	
+	.phone-1st-row {
+		background-color: #FFFAF0;
+	}
+	
+	.phone-2nd-row {
+		background-color: #F0FFFF;
+	}
+	
+	.phone-3rd-row {
+		background-color: #FFF5EE;
+	}
+	
+	
+	
+	
+
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* スマホ用のレイアウト（画面幅が1200px以下の場合） */
+@media (max-width: 1200px) {
+
+	.pkmn-list-contents {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		/* 垂直方向の中央揃え */
+		justify-content: center;
+		background: linear-gradient(to bottom right, #95f08d, #75c05d);
+		border-radius: 5px;
+		/*    color: #FFF;*/
+		font-size: 8px;
+		height: 400px;
+		width: 100%;
+		padding: 0%;
+		margin:auto;
+	}
+
+}
